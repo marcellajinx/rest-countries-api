@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "react-scripts build",
-    "predeploy" : "npm run dev",
+    "predeploy" : "npm run build",
     "deploy": "gh-pages -d build", 
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
