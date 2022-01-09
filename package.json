@@ -1,14 +1,14 @@
 {
   "homepage": "https://marcellajinx.github.io/rest-countries-api.github.io/",
-  "name": "rest-country-api",
+  "name": "rest-countries-api.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url 'https://marcellajinx.github.io/rest-countries-api.github.io/'",
+    "deploy": "gh-pages -d dist",
+
     "dev": "parcel src/index.html",
-    "build": "react-scripts build",
-    "predeploy" : "npm run build",
-    "deploy": "gh-pages -d build", 
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
@@ -36,5 +36,9 @@
   },
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://marcellajinx.github.io/rest-countries-api.github.io.git"
+  }
 }
