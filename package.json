@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "rm -rf dist && parcel build src/index.html --public-url 'https://marcellajinx.github.io/rest-countries-api.github.io/'",
-    "deploy": "gh-pages -d dist",
+    "build": "parcel build src/index.html",
+    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist",
 
     "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
