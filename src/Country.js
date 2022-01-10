@@ -11,7 +11,7 @@ const Country = (props) => {
         <div className="h-80 w-64 m-auto">
             <div className="card shadow-boxShadowHeader">
                 {/* <Link to={`https://restcountries.com/v3.1/name/${id}?fullText=true/`}> */}
-                <Link to={`details/${id}`}>
+                <Link to={`/details/${id}`}>
                     <img src={ hero } alt={ name } className="card-img-top w-full h-40"/>
                     <div className="card-body px-6 py-4">
                         <h5 className="card-title font-bold text-lg pb-2">{ name }</h5>
