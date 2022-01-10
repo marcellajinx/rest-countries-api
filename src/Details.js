@@ -10,7 +10,6 @@ class Details extends Component {
       `https://restcountries.com/v3.1/name/${this.props.match.params.id}?fullText=true/`
     );
     const json = await res.json();
-    // this.setState(Object.assign({ loading: false }, json.country[0]));
     this.setState(Object.assign({ loading: false }, json[0]));
   }
 
